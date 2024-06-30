@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Eastern University Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #063a1f;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .background-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://eclat.blob.core.windows.net/image/D5809F44-B31C-48D4-B9BA-8953AF1E5913.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        .content-wrapper {
+            width: 400px;
+            text-align: left;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+        
+        .logo a {
+            text-decoration: underline;
+            font-size: 12px;
+            color: white;
+        }
+
+        .logo a:hover {
+            text-decoration: none;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary, .btn-outline-secondary {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-primary:hover, .btn-outline-secondary:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -90px 80px rgba(30, 51, 58, 0.863);
+            position: relative;
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 10px 0 0 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer img {
+            margin-right: 10px;
+            height: 20px;
+        }
+
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-check {
+            margin-top: 10px;
+        }
+
+        .float-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .forgot-password {
+            clear: both;
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            font-weight: bold;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1c77303f;
+        }
+
+        #loginForm .btn-primary {
+            width: 100%;
+        }
+
+        .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .bottom-row .form-check {
+            margin: 0;
+        }
+
+        .bottom-row .forgot-password {
+            margin-top: 0;
+        }
+
+        #request-password {
+            font-weight: bold;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        #request-password:hover {
+            background-color: #1d79313f;
+        }
+
+    </style>
+    </head>
+    <body>
+    <div class="background-wrapper">
+        <div class="content-wrapper">
+            <div class="logo">
+                <img src="https://instructure-uploads-apse1.s3-ap-southeast-1.amazonaws.com/account_98220000000000001/attachments/1/feulogo.png?AWSAccessKeyId=AKIAIDDUVOH2KGZFBNAQ&Expires=1949782073&Signature=coqGF5sk0YnCv86vjRlDpp45b9I%3D&response-cache-control=Cache-Control%3Amax-age%3D473364000.0%2C%20public&response-expires=473364000.0" alt="Far Eastern University Logo" style="height: 220px; width: 170px;">
+                <a href="https://www.feu.edu.ph/undergraduate-programs/" class="smaller-link" target="_blank">Browse Courses</a>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username" class="float-left"><strong>Username</strong></label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="float-left"><strong>Password</strong></label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                </div>
+                <div class="bottom-row">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="staySignedIn">
+                        <label class="form-check-label" for="staySignedIn">Stay signed in</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" style="background-color: transparent; border: 2px solid #fff; color: #fff;">Log In</button>
+                <div class="forgot-password">
+                    <a href="#" id="forgot-password-link" style="text-decoration: none; color: white;">Forgot Password?</a>
+                </div>
+                <div style="text-align: center; margin-top: 10px;">
+                    <div style="border-bottom: 2px solid #ccc; width: 100%;"></div> <br>
+                    <a href="https://account.microsoft.com/account" target="_blank" style="color: white; text-decoration: underline;">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/448880824_480568771220543_8033972075304044135_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeH4kn6lC3R3uCTVPD_kYkIcewIo6kbe_6F7AijqRt7_oRpyxEoXIDmgQAK-iudo10IAZf7PH07wzAyKkS6Xspqw&_nc_ohc=qNCrOVs7BRkQ7kNvgEpHxOK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEhMQqkv3EWWRUa9J53J9V9tjMQgEKT56wnQ0cPNy91JQ&oe=66A8764D" width="25px" height="15px" alt="Microsoft logo">
+                        Login with Microsoft
+                    </a>
+                </div>
+            </form>
+            <br>
+            
+            <!-- Forgot password form -->
+            <div id="forgot-password-form" style="display: none;">
+                <p>Enter your Username and we'll send you a link to change your password.</p>
+                <div class="form-group">
+                    <label for="username" class="float-left"><strong>Username</strong></label>
+                    <input type="text" class="form-control" id="forgot-username" placeholder="Enter username" required>
+                </div>
+                <button id="back-to-login" class="btn btn-link">Back to Login</button>
+                <button id="request-password" class="btn btn-primary">Request Password</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="#">Help</a>
+            <a href="https://www.instructure.com/policies/product-privacy-policy" target="_blank">Privacy Policy</a>
+            <a href="https://feu.instructure.com/login/canvas#" target="_blank">Acceptable Use Policy</a>
+            <a href="https://www.facebook.com/Instructure/" target="_blank">Facebook</a>
+            <a href="https://x.com/instructure" target="_blank">X.com</a>
+            <br>
+            <p>
+                <a href="https://www.instructure.com/" target="_blank" style="text-decoration: underline;">
+                    <img src="https://companieslogo.com/img/orig/INST.D-dc22204f.png?t=1689778726" alt="Instructure Logo" style="height: 10px;">
+                    INSTRUCTURE
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#loginForm").submit(function(event) {
+                event.preventDefault();
+
+                const username = $("#username").val().trim();
+                const password = $("#password").val().trim();
+
+                if (username === "" || password === "") {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "/login",
+                    data: {
+                        username: username,
+                        password: password
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            window.location.href = "/dashboard";
+                        } else {
+                            alert("Invalid username or password.");
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error logging in:", error);
+                        alert("Error logging in. Please try again.");
+                    }
+                });
+            });
+
+            $("#forgot-password-link").on("click", function(event) {
+                event.preventDefault();
+                $("#loginForm").hide();
+                $("#forgot-password-form").show();
+        });
+
+            $("#back-to-login").on("click", function(event) {
+                event.preventDefault();
+                $("#forgot-password-form").hide();
+                $("#loginForm").show();
+            });
+        });
+    </script>
+</body>
+</html>
